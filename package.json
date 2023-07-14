@@ -1,0 +1,47 @@
+{
+  "name": "simpchain",
+  "version": "0.0.1",
+  "description": "simpchain",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && npm install -g .",
+    "clean": "rm -rf dist"
+  },
+  "bin": {
+    "doc": "./dist/index.js"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "repository": "https://github.com/context-labs/simpchain",
+  "author": "sam@usecontext.com",
+  "license": "MIT",
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.2",
+    "commander": "^10.0.0",
+    "esbuild": "^0.17.12"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^13.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.3"
+  }
+}
