@@ -1,0 +1,26 @@
+import { Callout } from "nextra-theme-docs";
+
+# Data Types
+
+There are two types of sources in Context:
+
+- [**Sitemaps**](#sitemaps)
+- [**YouTube**](#youtube)
+
+## Sitemaps
+
+The Sitemap source type utilizes XML sitemap files to crawl an entire website and incorporate its content into a bot. To use this source type, you need access to a functional XML file without any errors.
+
+<Callout emoji="⚠️">
+  Attempting to use a homepage URL or any other non-sitemap URL will not yield
+  successful results.
+</Callout>
+
+## YouTube
+
+The YouTube source type employs a YouTube channel, video, or playlist link as a source for the bot. Our platform subsequently scrapes all the videos and generates transcriptions. These transcriptions serve as the foundation for the bot's knowledge base.
+
+<Callout emoji="⚠️">
+  You must use a YouTube playlist or channel link. Attempting to use a single
+  video link will not yield successful results.
+</Callout>

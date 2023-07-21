@@ -1,0 +1,45 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Floating Launcher
+
+The Floating Launcher is an "Intercom-style" button located in the bottom right or left corner of your app or website, which launches a [bot modal](/bots/bot-modal) upon clicking. This is the easiest way to integrate Context, as it only requires embedding a single script to place the button.
+
+## How to Install the Floating Launcher
+
+<Steps>
+### Locate bot & begin installation
+
+Click the "Bots" button in the left side navigation, select the bot you want to install, then navigate to the top right corner of the screen and click "Install". Next, click the "Floating Launcher" button, which will open a popup with detailed installation instructions.
+
+### Select launcher styles
+
+To seamlessly blend the floating launcher button with your app or website, you can modify its colors and positioning. Select from the 3 dropdown options that allow you to change the position and color styles.
+
+### Install the script
+
+To add the floating launcher to your site or app, first make sure that a script is inserted in the **`<head>`**. The script should look like this:
+
+```js
+<script
+  id="__CONTEXT_BUBBLE__"
+  src="https://portal.usecontext.io/portal/portal.js"
+  data-bot-id="-EbhtSlJEg"
+  data-theme="light"
+  data-type="launcher"
+  data-position="bottom-right"
+  data-background="#000000"
+  data-color="#FFFFFF"
+></script>
+```
+
+Be sure to use the script provided in the instructional popup, rather than the example above, as it will contain your custom styles.
+
+### Publish your site and test
+
+With the script in place, publish your site or app and test the floating button. Upon clicking, it should launch a [Context bot modal](/bots/bot-modal) as a popup, enabling your users to interact with it in real time to answer questions.
+
+### Monitor queries
+
+As users begin interacting with the bot, you can monitor the incoming queries in real time using the Context app. [Learn how to monitor queries](/bots/monitor-queries).
+
+</Steps>

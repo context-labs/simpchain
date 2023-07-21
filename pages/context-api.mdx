@@ -1,0 +1,149 @@
+import { Callout } from "nextra-theme-docs";
+
+# Context API
+
+Some Context features are available via an API. This allows developers to build customer applications using Context. We provide a TypeScript/JavaScript SDK for Node.js. 
+Our API functionality is currently limited to the bot querying flow. We will adding support for other features and languages in the near future. 
+
+If you have a specific use case that you'd like to see supported, please [contact us](mailto:hello@usecontext.io).
+
+
+<Callout>
+This is the first version of our API. Please reach out to us if you have any questions or feedback.
+</Callout>
+
+
+
+### Getting Started
+
+Install the Context [NPM package](https://www.npmjs.com/package/@context-labs/sdk):
+
+```
+npm install --save @context-labs/sdk
+```
+
+In your application, import the Context SDK and instantiate a new Context client. 
+
+```typescript
+import { 
+  ContextSDK, 
+  ContextSDKError, 
+  type QueryResponse, 
+  type Query 
+} from '@context-labs/sdk';
+
+const context = new ContextSDK({}); // note: you must pass an empty object here for now
+```
+
+<Callout>
+You must pass an empty object to the constructor.
+</Callout>
+
+
+### Query
+
+Querying a bot is the process of asking a bot a question and receiving a response based on the sources that are connected to the bot.
+
+To query a bot, call the `query` method on the client and provide an object containing the `botId`, `query`, and callbacks for the `onData`, `onComplete`, and `onError` parameters:
+
+```typescript
+const main = async () => {
+  const { controller }: QueryResponse = await context.query({
+    botId: 'bJuJvrIyk',
+    query: 'How can I get started with Solana?',
+    onData: (data: string) => {
+      console.log(data);
+    },
+    onComplete: (query: Query) => {
+      console.log(query);
+    },
+    onError: (error: ContextSDKError) => {
+      console.error(error);
+    },
+  });
+};
+
+main();
+```
+Read the description of each parameter below:
+
+`botId`: The ID of the bot you wish to query. This field is available in the bot's URL. For example, the bot ID for the bot at https://app.usecontext.io/dashboard/bots/details?botId=bJuJvrIyk is `bJuJvrIyk`.
+
+`query`: The question you would like ask the bot as a string value.
+
+`onData`: This optional callback is called for every chunk of data returned by Context. The data is returned as a string value. Use this callback to stream data in real-time to your application.
+
+`onComplete`: This optional callback is called when data is done streaming. The value returned is a `Query` object. Use this callback to determine when the query is complete and inspect the query object for additional information.
+
+`onError`: This optional callback is called when an error is encountered. A `ContextSDKError` value is passed, containing more details about the nature of the error. Use this callback to handle errors.
+
+### Setting Feedback
+
+It is possible to set user feedback on a query. This is useful for letting administrators know if a query was helpful or not, and training the bot to return better results in the future.
+
+The `setQueryFeedback` method accepts an object containing a string `queryId` field and a boolean `helpful` field indicating whether the query was helpful or not. This method returns a `Query` object.
+
+```typescript
+const makeRequest = () =>
+  new Promise<Query>((resolve, reject) => {
+    context.query({
+      botId: 'bJuJvrIyk',
+      query: 'How can I get started with Solana?',
+      onComplete: (query: Query) => {
+        resolve(query);
+      },
+      onError: (error: ContextSDKError) => {
+        console.error(error);
+        reject(error);
+      },
+    });
+  });
+
+const main = async () => {
+  const { _id: queryId } = await makeRequest();
+  const query: Query = await context.setQueryFeedback({
+    queryId,
+    helpful: true,
+  });
+  console.log(query.helpful) // true
+};
+
+main();
+```
+Read the description of each parameter below:
+
+`botId`: The ID of the bot you wish to query. This field is available in the bot's URL. For example, the bot ID for the bot at https://app.usecontext.io/dashboard/bots/details?botId=bJuJvrIyk is `bJuJvrIyk`.
+
+`query`: The question you would like ask the bot as a string value.
+
+`onData`: This optional callback is called for every chunk of data returned by Context. The data is returned as a string value. Use this callback to stream data in real-time to your application.
+
+`onComplete`: This optional callback is called when data is done streaming. The value returned is a `Query` object. Use this callback to determine when the query is complete and inspect the query object for additional information.
+
+`onError`: This optional callback is called when an error is encountered. A `ContextSDKError` value is passed, containing more details about the nature of the error. Use this callback to handle errors.
+
+
+### Searching
+
+Searching a bot is the process of using [semantic search](https://www.bloomreach.com/en/blog/2019/semantic-search-explained-in-5-minutes?spz=learn_orig) to find the the most releveant content from the sources that are connected to the bot.
+
+To search a bot, call the `search` method on the client and provide an object containing the `botId` and `query`.
+
+```typescript
+const main = async () => {
+  const { snippets }: SemanticSearchResponse = await context.search({
+    botId: 'bJuJvrIyk',
+    query: 'How can I get started with Solana?',
+  });
+
+  console.log(snippets);
+};
+
+main();
+
+```
+Read the description of each parameter below:
+
+`botId`: The ID of the bot you wish to query. This field is available in the bot's URL. For example, the bot ID for the bot at https://app.usecontext.io/dashboard/bots/details?botId=bJuJvrIyk is `bJuJvrIyk`.
+
+`query`: The value you would like to search for as a string value.

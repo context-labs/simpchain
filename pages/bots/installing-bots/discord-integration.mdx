@@ -1,0 +1,52 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Discord Integration
+
+The [Discord](https://discord.com/) integration enables you to install a Context bot directly into your [Discord](https://discord.com/) server, allowing users to ask questions by simply tagging the bot. This feature is invaluable for projects or products that rely on a [Discord](https://discord.com/) server for technical support.
+
+## How to Install a Context Bot in Discord
+
+<Steps>
+### Locate bot & begin installation
+Click the "Bots" button in the left side navigation, select the bot you want to install, navigate to the top right corner of the screen, and click "Install". Next, click the "Discord" button, which will open a popup with detailed installation instructions.
+
+### Install Context on your server
+
+Click the button to install Context on your Discord server. A new tab will open, prompting you to sign in to Discord if you haven't already.
+
+### Select the server you want to install Context into
+
+In the newly opened window, select the Discord server where you'd like to install Context. You must have admin permissions for the chosen server. Follow the on-screen instructions to complete the installation.
+
+### Create a Context channel in your server
+
+Create a new channel in your Discord server specifically for the bot. We recommend naming the channel "ask-context", but feel free to choose a different name.
+
+### Link your channel to the bot
+
+In the newly created Context channel, enter the following command:
+
+```js
+@context !register -YOUR-BOT-ID
+```
+
+Remember, you cannot simply copy and paste the command above. First, tag the bot by typing the **`@`** key, followed by **`context`**.
+
+<Callout emoji="⚠️">
+  Make sure to replace **`-YOUR-BOT-ID`** with the unique ID provided in the
+  instructional popup.
+</Callout>
+
+### Query the bot
+
+Users can now query the bot in the designated channel. Simply tag the bot by typing the **`@`** key, followed by **`context`**, and then hit space and type your query. For example:
+
+**`@context`** **`How do I get started?`**
+
+The bot will take a moment to process before providing an answer.
+
+### Monitor queries
+
+As users begin interacting with the bot, you can monitor the incoming queries in real time using the Context app. [Learn how to monitor queries](/bots/monitor-queries).
+
+</Steps>

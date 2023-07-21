@@ -1,0 +1,28 @@
+import { Callout } from "nextra-theme-docs";
+
+# Usage
+
+Usage in Context is measured in three different metrics:
+
+- [Query Credits](#query-credits)
+- [Documents](#documents)
+- [Syncs](#syncs)
+
+Depending on your [Context subscription plan](/pricing), you have different limits for these metrics that are reset once per month. To view your limits, and how much usage you've accrued, go to your [Workspace Settings](/settings) page, and click "Billing".
+
+## Query Credits
+
+Every time a query to your bot is made, it uses Query Credits.
+
+- For GPT-3.5 it costs 1 Query Credit per response
+- For GPT-4 it costs 20 Query Credits per response
+
+[Learn more about the GPT models here.](/bots/models)
+
+## Documents
+
+[Documents](/sources/documents) represent the data that is fed to your bot to train it. Each plan has a different number of maximum documents that is allotted. If you try to upload a [source](/sources) that has more documents in it than is permitted on your plan, you will be prompted to upload your [plan](pricing).
+
+## Syncs
+
+[Syncs](/sources/syncing) are the process of refreshing your sources to include their most recent content. You are allotted a certain number of manual syncs per month, and if you attempt to go over the number allocated in your plan, you will be prompted to upgrade.

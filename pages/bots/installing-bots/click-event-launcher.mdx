@@ -1,0 +1,60 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Click Event Launcher
+
+The Click Event Launcher enables you to launch a [bot modal](/bots/bot-modal) through a custom attribute that can be incorporated into any HTML element on a website or app. This is an excellent choice for a more personalized launch experience, especially if you're using a website builder like Webflow.
+
+## How to install a Click Event Launcher
+
+<Steps>
+
+### Locate bot & begin installation
+
+Click the "Bots" button in the left side navigation, select the bot you want to install, then navigate to the top right corner of the screen and click "Install". Next, click the "Click Event Launcher" button, which will open a popup with detailed installation instructions.
+
+### Install the script
+
+To launch your Context bot anywhere on your site, ensure that a script is first installed in the **`<head>`**. The script should look like this:
+
+```js
+<script
+  id="__CONTEXT_BUBBLE__"
+  src="https://portal.usecontext.io/portal/portal.js"
+  data-bot-id="YOUR-BOT-ID"
+  data-theme="light"
+  data-type="attribute"
+></script>
+```
+
+{" "}
+
+<Callout>
+  Copy the script provided in the instructional popup, rather than the example
+  above, as a unique bot-id code is required.
+</Callout>
+
+### Add the launcher attribute to your HTML element
+
+Add the following HTML attribute to any element you wish to use for launching your bot:
+
+```HTML
+context-launcher=“true"
+```
+
+For instance, if you were adding it to a div, it would look like this:
+
+```HTML
+<div context-launcher=“true”>Click to launch Context</div>
+```
+
+This small piece of code is all that's needed to launch the bot.
+
+### Publish your site and test
+
+With the script and attribute in place, publish your site or app and test the element. When clicked, it should initiate a [Context bot modal](/bots/bot-modal) as a popup, allowing your users to interact with it to answer questions in real time.
+
+### Monitor queries
+
+As users start engaging with the bot, you can monitor the incoming queries in real time using the Context app. [Learn how to monitor queries](/bots/monitor-queries).
+
+</Steps>

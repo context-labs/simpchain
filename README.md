@@ -3,11 +3,11 @@
   <br>
   <a href="https://github.com/context-labs/autodoc"><img src="https://raw.githubusercontent.com/context-labs/autodoc/master/assets/autodoc.png" alt="Markdownify" width="200" style="border-radius:8px;"></a>
   <br>
-Simpchain
+SimpChain
   <br>
 </h1>
 
-<h4 align="center">⚡ Toolkit for auto-generating codebase documentation using LLMs ⚡</h4>
+<h4 align="center">⚡ The simplest LLM development toolkit ⚡</h4>
 <p align="center">
 <a href="https://opensource.org/licenses/MIT">
 	  <img alt="Twitter URL" src="https://img.shields.io/badge/License-MIT-yellow.svg">
@@ -16,7 +16,7 @@ Simpchain
 	  <img alt="NPM Package" src="https://badge.fury.io/js/@context-labs%2Fautodoc.svg">
   </a>
   <a href="https://twitter.com/autodoc_">
-	  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?label=Follow%20%40autodoc_&style=social&url=https%3A%2F%2Ftwitter.com%2Fautodoc_">
+	  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?label=Follow%20%40contextbots&style=social&url=https%3A%2F%2Ftwitter.com%2Fautodoc_">
   </a>
 	  <a href="https://discord.com/invite/zQJerGaX">
 	  <img alt="Discord Server" src="https://dcbadge.vercel.app/api/server/zQJerGaX?compact=true&style=flat">
@@ -31,7 +31,16 @@ Simpchain
 </p>
 
 
+### Join our Simp Community!
+
+
 ## What is this?
+
+SimpChain is the simplest LLM development toolkit
+
+SimpChain is a pared-down large language model (LLM) development toolkit. It's designed for developers who prefer simplicity and a hands-on approach to learning and working. This toolkit cuts out unnecessary complexity, aiming to provide you with only the essentials you need to build your own language models.
+
+
 Autodoc is a **experimental** toolkit for for auto-generating codebase documention for git repositories using Large Language Models, like [GPT-4](https://openai.com/research/gpt-4) or [Alpaca](https://github.com/ggerganov/llama.cpp). Autodoc can be [installed](#get-started) in your repo in about 5 minutes. It indexes your codebase through a depth-first traversal of all repository contents and calls an LLM to write documentation for each file and folder. These documents can be combined to describe the different components of your system and how they work together. 
 
 The generated documentation lives in your codebase, and travels where your code travels. Developers who download your code can use the `doc` command to ask questions about your codebase and get highly specific answers with reference links back to code files. 

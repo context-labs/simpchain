@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://docs.usecontext.io</loc><lastmod>2023-05-19T21:46:14.887Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots</loc><lastmod>2023-05-19T21:46:14.887Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/bot-modal</loc><lastmod>2023-05-19T21:46:14.887Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/bot-settings</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/chat-with-your-bot</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/creating-bots</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/installing-bots</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/installing-bots/click-event-launcher</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/installing-bots/discord-integration</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/installing-bots/floating-launcher</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/installing-bots/slack-integration</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/models</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/monitor-queries</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/bots/view-bot</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/feed</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/inviting-teammates</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/pricing</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/quick-start</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/settings</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/sources</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/sources/archive-a-source</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/sources/creating-sources</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/sources/data-types</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/sources/documents</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/sources/syncing</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.usecontext.io/usage</loc><lastmod>2023-05-19T21:46:14.888Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

@@ -1,0 +1,76 @@
+import { Cards, Card, Callout } from "nextra-theme-docs";
+
+# Bot Settings
+
+Easily adjust your bot settings at any time to modify various parameters.
+
+To access the settings, click the "Bots" button in the left side navigation, choose the bot you want to adjust, and then select the “Settings” tab located below the bot name and logo.
+
+From this section, you can modify options such as:
+
+## General Settings
+
+### Name
+
+The name will be displayed on the bot when it is launched as a [modal](/bots/bot-modal), and in your bot dashboard.
+
+### Image
+
+The image is a logo that you can display on the bot when launched as a [modal](/bots/bot-modal).
+
+## Prompt Settings
+
+The prompt settings allow you to configure custom prompt parameters to fine-tune your bot to your specific use case and make it more effective.
+
+### Topic
+
+Enter the subject that the bot is trained on.
+
+<Callout type="info">
+  Ex. If this bot is trained on your product documentation, enter "[Your
+  Product] Documentation"
+</Callout>
+
+<Callout type="info">
+  Ex. If the bot is trained on your company's knowledge base, enter "[Your
+  Company] Knowledge Base"
+</Callout>
+
+### Additional Instructions
+
+Enter any additional prompt instructions for your bot. These should be written in natural language, and be as clear as possible, in the same way you would write a prompt for Chat-GPT.
+
+<Callout type="info">
+  Ex. You could enter "Always begin your response with 'Thank you for your
+  thoughtful question. Here is the best answer I could find'"
+</Callout>
+
+<Callout type="info">
+  Ex. You could enter "End every response with 'If you'd like more information,
+  please reach out to our support team at support@[yourcompany].com'"
+</Callout>
+
+### AI Model
+
+The model selector determines which AI [model](/bots/models) you are using, either GPT-3.5 or GPT-4.
+
+## Sources
+
+In the Sources settings, you can add or remove sources to your bot so that it is trained on different data sets. Click on any source in the list to add it to your bot. The selected source will be marked with a check, signifying that it is now incorporated into the bot.
+
+## FAQs
+
+- FAQs are preloaded questions that are displayed on the [modal](/bots/bot-modal) when it is launched. This is a good way to prompt your users with commonly asked questions.
+
+## Tracking
+
+Here you can set UTM parameters to track when links are clicked from your bot's responses. The parameters you enter will automatically be added as a suffix for every reference link.
+
+<Callout type="warning">
+  Don't include the '?' question mark symbol in your UTM parameter. It should be
+  formatted like this: "utm_campaign=blog_post"
+</Callout>
+
+---
+
+Once you've finished updating the settings, scroll to the bottom of the page and click “Save bot”.

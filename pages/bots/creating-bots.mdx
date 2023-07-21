@@ -1,0 +1,52 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Creating Bots
+
+Creating a bot on Context is seamless and typically takes less than 5 minutes.
+
+## How To Create A Bot
+
+<Steps>
+
+### Begin Bot Creation
+
+Click "Bots" in the left side navigation panel, and then click "Create Bot" in the top right corner of the screen.
+
+### Enter General Information
+
+**Name your bot:** Choose a display name for your bot that users will see during interactions and that admins will see in the backend.
+
+**Avatar:** Upload a logo to represent your bot, which will be visible to users during interactions. This helps to align your bot with your company or organization's branding.
+
+**Model:** Select the AI/LLM model you prefer to power your bot. GPT-4 is highly recommended due to its superior capabilities; however, it has a slower response time and consumes 20 times more query credits than GPT-3.5. Make your choice based on the desired performance and credit consumption balance.
+
+### Select Your Sources
+
+Sources are collections of documents that your bot will use to answer queries. Add as many sources as desired, as bots can reference multiple sources simultaneously.
+
+If you've already created sources, they will appear in a list.
+
+<Callout type="info">
+  If you don't have any sources yet, click the add source button. To learn more
+  about creating sources, [click here.](/sources/creating-sources)
+</Callout>
+
+Select a source from the list to serve as a reference for your bot. A checkmark will appear on selected sources. Click again to deselect a source.
+
+Choose as many sources as needed. The bot will draw from all selected sources when answering queries.
+
+### Add FAQs
+
+FAQs are optional pre-filled questions that display when users launch your bot, providing a starting point for common inquiries.
+
+To add an FAQ, enter the question in the dialog box and click "Add FAQ".
+
+Your FAQs will appear below the dialog box, and you can remove them by clicking the "X" button.
+
+### Finalize & Sync
+
+Click the "Create Bot" button at the bottom of the screen to finalize your bot creation. Your bot will begin syncing with the data from your sources, which may take a few minutes or longer, depending on the number of sources.
+
+A "syncing" dialog screen will appear, and once completed, you'll be directed to the bot dashboard.
+
+</Steps>
